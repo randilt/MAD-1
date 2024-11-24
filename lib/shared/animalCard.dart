@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Animalcard extends StatelessWidget {
-  const Animalcard({super.key});
+  // this is just one paramter we added for demonstration, we can add any parameter we need like this...
+  final String cardTitle;
+  const Animalcard({super.key, required this.cardTitle});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +34,7 @@ class Animalcard extends StatelessWidget {
             width: 500,
           ),
         ),
-        Text("CAT")
+        Text(cardTitle)
       ],
     );
   }

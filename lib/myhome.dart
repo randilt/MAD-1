@@ -13,9 +13,9 @@ class MyHomePage extends StatelessWidget {
       ),
       body: const Column(
         children: [
-          Animalcard(),
-          Animalcard(),
-          Animalcard(),
+          Animalcard(
+            cardTitle: "CAT",
+          ),
         ],
       ),
     );
